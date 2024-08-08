@@ -1,0 +1,137 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.App {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 20%; /* Width of the sidebar */
+  width: 80%; /* Remaining width of the screen */
+  height: calc(100vh - 50px); /* Full height minus top bar height */
+  overflow: auto;
+  padding: 20px;
+  margin-top: 50px; /* Space for the top bar */
+  border-left: 1px solid white; /* White border between left panel and main content */
+  background-image: url('./assets/background.jpg'); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the entire content area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-color: rgba(255, 255, 255, 0.5); /* Light overlay color for transparency */
+  background-blend-mode: overlay; /* Blend the image with the overlay color */
+}
+
+.content {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.topbar {
+  background-color: #FF6600; /* Matching the left pane color */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid white; /* White border below the top bar */
+  border-right: 1px solid white; /* White border to separate the top bar from right panel */
+}
+
+.topbar .welcome-message {
+  font-size: 1rem; /* Adjust font size for better visibility */
+  margin-left: 20px; /* Space from the start of the top bar */
+}
+
+.topbar .app-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.topbar .app-name img {
+  width: 40px; /* Adjust the image size as needed */
+  height: 40px; /* Adjust the image size as needed */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.topbar .app-name h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.topbar .admin-username {
+  margin-left: auto; /* Pushes the admin username to the far right */
+  font-size: 0.9rem;
+  color: white;
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin-right: 20px; /* Adjust this value to move slightly left */
+}
+
+.sidebar {
+  width: 20%; /* Width of the left panel */
+  height: calc(100vh - 50px); /* Full height minus top bar height */
+  background-color: #FF6600; /* Matching the top bar color */
+  color: white;
+  position: fixed;
+  top: 50px; /* Start below the top bar */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s;
+  border-right: 1px solid white; /* White border between left panel and main content */
+  border-top: 1px solid white; /* White border to separate the left panel from the top bar */
+}
+
+/* Adding a border to the right side (if there's a right panel or content area) */
+.right-panel {
+  border-left: 1px solid white; /* White border between right panel and main content */
+}
+
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-area {
+  margin-left: 220px; /* Width of the sidebar */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Default content background */
+  height: calc(100vh - 50px); /* Full height minus top bar height */
+  overflow-y: auto;
+  position: relative;
+  background-image: url('./assets/background.jpeg'); /* Add background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.default-content {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  padding-top: 50px;
+}
+

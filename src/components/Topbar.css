@@ -1,0 +1,34 @@
+/* src/components/Topbar.css */
+.topbar {
+    background-color: #ff7043; /* Mild orange color */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .topbar__icon {
+    width: 40px; /* Adjust to the desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+  }
+  
+  .topbar__title {
+    font-size: 1.5rem;
+  }
+  
+  .topbar__admin {
+    margin-left: auto;
+    margin-right: 20px; /* Space from the right edge */
+  }
+  
+  
+  
+  
+  
+  

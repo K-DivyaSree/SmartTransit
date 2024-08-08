@@ -1,0 +1,65 @@
+/* Sidebar.css */
+.sidebar {
+    width: 20%; /* Width of the left panel */
+    height: calc(100vh - 50px); /* Full height minus topbar height */
+    background-color: #FF6600; /* Srit College orange color */
+    color: white;
+    position: fixed;
+    top: 50px; /* Start below the topbar */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+  }
+  
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .sidebar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .sidebar .menu-item {
+    display: block; /* Make each item a block element */
+    width: 100%; /* Make each item take the full width of the sidebar */
+    padding: 15px; /* Padding for button-like appearance */
+    color: white; /* Default color */
+    background-color: transparent; /* Transparent background by default */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size for better visibility */
+    margin: 10px 0; /* Equal gaps between modules */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .sidebar .menu-item:hover, .sidebar .menu-item:focus {
+    background-color: white; /* Change background on hover or focus */
+    color: #FF6600; /* Change text color on hover */
+  }
+  
+  .sidebar .menu-item i {
+    margin-right: 20px; /* Space between icon and text */
+  }
+  
+  .sidebar .logout {
+    margin-top: auto;
+    width: 100%; /* Ensure logout button covers full width */
+    padding: 15px; /* Padding for button-like appearance */
+  }
+  
+  

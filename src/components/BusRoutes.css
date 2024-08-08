@@ -1,0 +1,45 @@
+/* src/components/BusRoutes.css */
+.bus-routes-container {
+    height: 100%; /* Full height of the main content area */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light and transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .bus-routes-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bus-routes-table th,
+  .bus-routes-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .bus-routes-table th {
+    background-color: #FF6600; /* Matching the theme color */
+    color: white;
+  }
+  
+  .action-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #FF6600; /* Matching the theme color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-btn:hover {
+    background-color: white;
+    color: #FF6600; /* Invert color on hover */
+    border: 1px solid #FF6600;
+  }
+  
+  
